@@ -5,6 +5,9 @@ import Sidebar from "./Components/Sidebar/Sidebar.jsx";
 
 import classes from './App.module.css';
 
+import Movies from "./Components/Main/Movies/Movies.jsx";
+import RatedMovies from "./Components/Main/RatedMovies/RatedMovies.jsx";
+
 
 function App() {
 
@@ -13,8 +16,8 @@ function App() {
             <Sidebar/>
             <Routes>
                 <Route path="/movies" element={<Main/>}>
-                    <Route index element={<div>movies</div>}/>
-                    <Route path="rated" element={<div>rated</div>}/>
+                    <Route index element={<Movies/>}/>
+                    <Route path="rated" element={<RatedMovies/>}/>
                     <Route path=":movie" element={<div>movie</div>}/>
                 </Route>
                 <Route path="*" element={<h1>Error</h1>}/>

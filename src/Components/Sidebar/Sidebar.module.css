@@ -1,7 +1,54 @@
-
 .sidebar{
     display: flex;
     flex-direction: column;
     width: 280px;
     background-color: #F2EBF9;
 }
+
+.header{
+    display: flex;
+    align-items: center;
+    color: #9854F6;
+    font-size: 24px;
+    margin:24px 0 80px 24px;
+}
+
+.header h2{
+    color: #9854F6;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.header img{
+    margin-right:12px;
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 232px;
+    height: 42px;
+    font-size:16px ;
+    line-height: 140%;
+    padding-left: 10px  ;
+    margin: 8px;
+}
+
+.activeLink{
+    border-radius: 8px;
+    background-color: #E5D5FA;
+    color: #9854F6;
+    font-weight: bold;
+}
+
