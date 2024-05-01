@@ -7,6 +7,7 @@ import classes from './App.module.css';
 
 import Movies from "./Components/Main/Movies/Movies.jsx";
 import RatedMovies from "./Components/Main/RatedMovies/RatedMovies.jsx";
+import MovieCard from "./Components/Main/Movies/MovieCard/MovieCard.jsx";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                 </Route>
                 <Route path="*" element={<h1>Error</h1>}/>
             </Routes>
+            <MovieCard/>
         </div>
     )
 }
